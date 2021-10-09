@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Can Aygün - YouTube - Code Examples</title>
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header>
+      <div class="container">
+        <div class="info">
+          <h1>Can Aygün - YouTube - Kod Örnekleri</h1>
+          <p>
+            Burada
+            <a
+              href="https://www.youtube.com/channel/UClplwnI7BqVy_ok19lKXgdw"
+              target="_blank"
+              rel="noopener noreferrer"
+              >YouTube kanalımda</a
+            >
+            yayınladığım videolardaki kod örneklerini bulabilirsiniz.
+          </p>
+        </div>
+        <div class="img-container">
+          <img src="./assets/logo.png" alt="Can Aygün - Logo" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Project List -->
+      <ul class="project-list">
+        <!-- List Title -->
+        <li class="list-title">
+          <span
+            ><button class="order-by-name-btn">
+              İsim <i class="fas fa-mouse"></i></button
+          ></span>
+          <span>Kod <i class="fab fa-code"></i></span>
+          <span
+            ><button class="order-by-category-btn">
+              Kategori <i class="fas fa-mouse"></i></button
+          ></span>
+        </li>
+
+        <li class="list-item">
+          <a
+            href="https://www.youtube.com/watch?v=IP3uxI5AprU"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="yt-link"
+          >
+            <i class="fab fa-youtube"></i> CSS ile 6 kolay Hover efekti
+          </a>
+          <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+          <span class="category component">Component</span>
+        </li>
+
+        <li class="list-item">
+          <a
+            href="https://www.youtube.com/watch?v=NEYk0wX-bGA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="yt-link"
+          >
+            <i class="fab fa-youtube"></i> Basit, sade ve responsive navbar
+            tasarımı
+          </a>
+          <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+          <span class="category component">Component</span>
+        </li>
+      </ul>
+    </main>
+
+    <!-- Main Script -->
+    <script src="app.js"></script>
+  </body>
+</html>
