@@ -2,7 +2,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to right, #42275a, #734b6d);
+  background-image: linear-gradient(to right, #42275a, #734b6d);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .side-list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
   background-color: #e3e3e3;
@@ -32,7 +32,6 @@ body {
   color: #5c5c5c;
   display: flex;
   justify-content: space-between;
-  transition: color 0.4s;
 }
 
 .side-list-item .open-sub-list-btn {
@@ -54,7 +53,7 @@ body {
 .sub-list {
   position: absolute;
   top: 0;
-  left: 110%;
+  left: 100%;
   z-index: 10;
   width: 100%;
   height: 100%;

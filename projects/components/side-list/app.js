@@ -3,17 +3,17 @@ const openBtns = document.querySelectorAll(".open-sub-list-btn");
 const closeBtns = document.querySelectorAll(".close-sub-list-btn");
 
 // Variables
-let toggledSubList;
+let toggledSublist;
 
 // Toggle sub list when open btn is clicked
 function openSubList(el) {
-  toggledSubList = el.nextElementSibling;
-  toggledSubList.classList.add("toggled");
+  toggledSublist = el.nextElementSibling;
+  toggledSublist.classList.add("toggled");
 }
 
 // Close sub list when back btn is clicked
 function closeSubList() {
-  toggledSubList.classList.remove("toggled");
+  toggledSublist.classList.remove("toggled");
 }
 
 // Event Listeners

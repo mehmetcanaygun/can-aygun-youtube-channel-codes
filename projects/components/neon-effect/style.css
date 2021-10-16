@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+:root {
+  --color-light: #cfe8fc;
+  --color-blue: skyblue;
+  --color-dark: #161616;
+  --color-bg: #0f121c;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg);
+}
+
+.neon-container {
+  border: 6px solid var(--color-light);
+  border-radius: 50px;
+  height: 260px;
+  padding: 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px #000, inset 2px 2px 6px #000,
+    inset 0px 0px 20px 0px var(--color-light),
+    inset 0px 0px 40px 0px var(--color-blue),
+    0px 0px 20px 0px var(--color-light), 0px 0px 60px 0px var(--color-blue);
+  animation: blinkContainer 4s linear infinite;
+}
+
+.neon-container h1 {
+  font-size: 72px;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 6px;
+  color: var(--color-light);
+  text-shadow: 4px 6px 5px #000, 0px 0px 30px var(--color-light),
+    0px 0px 60px var(--color-blue), 0px 0px 80px var(--color-blue);
+}
+
+.neon-container h1 span {
+  color: var(--color-dark);
+  animation: blink 4s linear infinite;
+}
+
+.neon-container h1 span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+@keyframes blink {
+  10%,
+  14%,
+  18%,
+  80%,
+  84%,
+  86% {
+    color: var(--color-light);
+    text-shadow: 4px 6px 5px #000, 0px 0px 30px var(--color-light),
+      0px 0px 60px var(--color-blue), 0px 0px 80px var(--color-blue);
+  }
+  0%,
+  12%,
+  16%,
+  20%,
+  79%,
+  82%,
+  86%,
+  88%,
+  100% {
+    color: var(--color-dark);
+    text-shadow: 4px 6px 5px #000;
+  }
+}
+
+@keyframes blinkContainer {
+  0%,
+  50%,
+  53%,
+  56%,
+  100% {
+    border-color: var(--color-light);
+    box-shadow: 2px 2px 6px #000, inset 2px 2px 6px #000,
+      inset 0px 0px 20px 0px var(--color-light),
+      inset 0px 0px 40px 0px var(--color-blue),
+      0px 0px 20px 0px var(--color-light), 0px 0px 60px 0px var(--color-blue);
+  }
+  51%,
+  52%,
+  54%,
+  55% {
+    border-color: var(--color-dark);
+    box-shadow: 2px 2px 6px #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .neon-container {
+    margin: 0 20px;
+    padding: 0 20px;
+  }
+
+  .neon-container h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+}
